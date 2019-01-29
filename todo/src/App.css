@@ -9,13 +9,38 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.inputForm {
+  padding: 4px;
+  margin: 10 px;
+}
+input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn {
+ padding: 5px 5px 5px 5px;
+ background-color: azure;
+ margin: 10px;
+ width: 25%;
+ font-size: 16px;
+}
+
+.btn:hover {
+  background-color: antiquewhite;
 }
 
 .App-link {
