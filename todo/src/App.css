@@ -46,6 +46,12 @@ input {
 .App-link {
   color: #61dafb;
 }
+li {
+  list-style-type: square;
+  list-style-position: outside;
+  list-style-image: none;
+  font-size: 16px;
+}
 
 @keyframes App-logo-spin {
   from {

@@ -11,7 +11,7 @@ class App extends Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
-
+    this.deleteItem = this.deleteItem.bind(this);
   }
 
   handleChange = (event) =>{
@@ -36,8 +36,11 @@ class App extends Component {
     event.preventDefault();
   }
 
-  deleteItem =() =>{
-    
+  deleteItem =(id) =>{
+    // const list = [...this.state.list];
+    // const updatedList = list.filter(item=>item.id !== id);
+    // console.log("Deleted");
+    // this.setState({list: updatedList});
   }
   
   render() {
@@ -71,7 +74,7 @@ class App extends Component {
                 return (
                   <li key={item.id} >
                     {item.value}
-                    <button onClick={()=>this.deleteItem(item.id)}>
+                    <button onClick={this.deleteItem(item.id)}>
                       Remove
                     </button>
                   </li>
