@@ -21,6 +21,12 @@ class App extends Component {
     event.preventDefault();
   }
 
+  addition = (num1, num2)=>{
+    return num1+ num2;
+  }
+
+  
+
   handleClick = (event) =>{
     const value = {
       id: 1+ Math.random(),
@@ -41,6 +47,8 @@ class App extends Component {
     // const updatedList = list.filter(item=>item.id !== id);
     // console.log("Deleted");
     // this.setState({list: updatedList});
+
+    console.log("Deleted");
   }
   
   render() {
@@ -68,13 +76,15 @@ class App extends Component {
            
           </form>
           <div>
+          <h1>{this.state.value}</h1>
             <h1>List of Todo: </h1>
             <ul>
               {this.state.list.map(item=>{
                 return (
                   <li key={item.id} >
                     {item.value}
-                    <button onClick={this.deleteItem(item.id)}>
+                    <button 
+                    onClick={this.deleteItem(item.id)} >
                       Remove
                     </button>
                   </li>
