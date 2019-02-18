@@ -6,7 +6,7 @@ export default class header extends Component {
     render(){
         return(
             <navbar>
-               
+               Changes
             </navbar>
         );
     }
